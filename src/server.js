@@ -11,7 +11,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
       origin: [
-        process.env.FRONTEND_URL || "https://codesync-f.vercel.app",
+        process.env.FRONTEND_URL || "https://codesync-front.onrender.com",
         "http://localhost:3000"
       ],
       methods: ["GET", "POST"],
